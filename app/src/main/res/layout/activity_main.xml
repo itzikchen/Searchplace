@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ithak.co.il.searchplaces.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MainCityET"
+            android:hint="city" />
+
+        <EditText
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MainFoodTypeET"
+            android:hint="food type" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Get"
+                android:id="@+id/MainGetBTN"
+                android:layout_weight="1"
+                android:background="#c5e9e6" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Refresh"
+                android:id="@+id/MainRefreshBTN"
+                android:layout_weight="1"
+                android:background="#c5e9e6" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Fill dummy data"
+                android:id="@+id/MainFillDummyDataBTN"
+                android:layout_weight="1"
+                android:background="#c5e9e6" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=" service start"
+                android:id="@+id/MainFillServiceStartBTN"
+                android:layout_weight="1"
+                android:background="#c5e9e6" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/MainPlacesLV"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#8c8c8c"
+            android:id="@+id/mapFragmentContianer"
+            android:layout_weight="1"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="portraitTV"
+            android:id="@+id/portraitTV" />
+
+    </LinearLayout>
+
+</RelativeLayout>
